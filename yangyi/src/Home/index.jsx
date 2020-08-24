@@ -3,21 +3,10 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Nav0 from './Nav0';
-import Banner0 from './Banner0';
-import Content0 from './Content0';
-import Content5 from './Content5';
-import Content3 from './Content3';
-import Footer1 from './Footer1';
+import Nav2 from './Nav2';
+import Banner1 from './Banner1';
 
-import {
-  Nav00DataSource,
-  Banner01DataSource,
-  Content00DataSource,
-  Content50DataSource,
-  Content30DataSource,
-  Footer10DataSource,
-} from './data.source';
+import { Nav20DataSource, Banner10DataSource } from './data.source';
 import './less/antMotionStyle.less';
 
 let isMobile;
@@ -56,40 +45,16 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Nav0
-        id="Nav0_0"
-        key="Nav0_0"
-        dataSource={Nav00DataSource}
+      <Nav2
+        id="Nav2_0"
+        key="Nav2_0"
+        dataSource={Nav20DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Banner0
-        id="Banner0_1"
-        key="Banner0_1"
-        dataSource={Banner01DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content0
-        id="Content0_0"
-        key="Content0_0"
-        dataSource={Content00DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content5
-        id="Content5_0"
-        key="Content5_0"
-        dataSource={Content50DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content3
-        id="Content3_0"
-        key="Content3_0"
-        dataSource={Content30DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Footer1
-        id="Footer1_0"
-        key="Footer1_0"
-        dataSource={Footer10DataSource}
+      <Banner1
+        id="Banner1_0"
+        key="Banner1_0"
+        dataSource={Banner10DataSource}
         isMobile={this.state.isMobile}
       />,
     ];
